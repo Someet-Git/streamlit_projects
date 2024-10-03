@@ -208,7 +208,9 @@ import numpy as np
 import os
 import streamlit as st
 
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+os.system("sudo apt-get install tesseract-ocr")
+
+# pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # Ensure the output folder exists
 output_folder = "wrong_frames"
